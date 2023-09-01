@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suzuki Bike Landing Page</title>
+</head>
+<body>
+    
+    <section class="main">
+        <header>
+        <a href="#"><img src="image/logo.png" class="logo" alt="logo"></a>
+        <ul class="nav">
+            <li><a href="#">Top Feature</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content"><h2>Ready to <span>Race</span></h2>
+        <a href="#" class="btn">Ride Now</a>
+        <img src="image/bike.png" class="bike" alt="bike">
+    </div>
+    <!--Slaider Content-->
+    <div class="slider">
+        <div class="slides active">
+            <h2><span>Engine</span><br>599 cc</h2>
+            <h2><span>Max Speed</span><br>160 kmph</h2>
+        </div>
+        <div class="slides">
+            <h2><span>Mileage</span><br>14 kmph</h2>
+            <h2><span>0-100 kmph</span><br>04 Seconds</h2>
+        </div>
+        <div class="slides">
+            <h2><span>Wheels</span><br>17-Inch Alloy</h2>
+            <h2><span>Tyre Type</span><br>Tubeless</h2>
+        </div>
+
+    </div>
+    <div class="footer">
+        <ul class="sic">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+        </ul>
+    </div>
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+
+    </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        const slides = document.querySelectorAll('.slides');
+        const dot = document.querySelectorAll('.dot');
+
+        function setActive(i){
+            for(slide of slides)
+            slide.classList.remove('.active');
+            slide[i].classList.remove('.active');
+
+            for(slide of slides)
+            dot.classList.remove('.active');
+            dot[i].classList.remove('.active');
+
+        }
+    </script>
+</body>
+</html>
